@@ -4,11 +4,11 @@ def main():
     num_words = get_num_words(text)
     book = "frankenstein"
 
-    #This marks the start og the book report
+    #This marks the start of the book report now variables have been defined above. 
     print(f"--- Begin report of {book} ---")
     print(f"{num_words} words found in the document")
     character_counts = get_char_count(text)
-    #print(character_counts)
+   
 
     for char in sorted(character_counts, key=character_counts.get, reverse=True):
         print(f"The '{char}' character was found {character_counts[char]} times")
